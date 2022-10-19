@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs
+  namespace: bentaljaard
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:749c03ae392e63c4368bea6aa0ac4f454320c62c28759c8ac50cb5d6ddf23b42
+        name: container-image
+        resources: {}
+status: {}
